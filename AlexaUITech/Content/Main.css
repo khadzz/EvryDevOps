@@ -1,0 +1,66 @@
+﻿.background {
+    /*opacity: 0.2;
+    background-image: url('../Images/field.jpg');
+    max-width: 99%;
+    max-height: 99%;*/
+}
+
+.news {
+    background-color: #FFFFFF;
+}
+
+.heading {
+    background-color: forestgreen;
+    padding-left: 25px;
+    color: white;
+    height: 25px;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 15px 50px;
+    text-align: center;
+}
+.Frame {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div1 {
+    width: 1150px;
+    margin: auto;
+    border: 3px solid #B8B8B8;
+    border-radius: 25px;
+    background-color: #F0F0F0;
+}
+
+.foot {
+    background-color: #92CD00;
+    text-align: center;
+    color: white;
+    border-radius: 15px 50px;
+}
+
+.FancyTextBox {
+    background: white;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #C0C0C0;
+    color: #666;
+    padding: 5px 10px;
+    width: 165px;
+    outline: none;
+    width: 250px;
+}
+
+.FancyButton {
+    border-radius: 5px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

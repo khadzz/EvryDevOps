@@ -1,0 +1,47 @@
+﻿@*@{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }*@
+
+    <p><span class="tab"><img src="~/Images/EvryLogo.png"  /></span></p>
+    
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+
+        <link href="~/Content/Menu.css" rel="stylesheet" />
+        <link href="~/Content/Main.css" rel="stylesheet" />
+    </head>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <body class="news">
+
+        <header>
+            <div class="nav">
+                <ul>
+                    <li class="Home">@Html.ActionLink("Application Details", "Index", "Menu")</li>
+                    <li class="Home1">@Html.ActionLink("Applicant Details", "ApplicanDetails", "Menu")</li>
+                    <li class="Home2">@Html.ActionLink("Request Details", "RequestDetails", "Menu")</li>
+                    <li class="Home3">@Html.ActionLink("Collateral Details", "CollateralDetails", "Menu")</li>
+                    <li class="Home3">@Html.ActionLink("Documents", "Documents", "Menu")</li>
+                    <li class="Home3">@Html.ActionLink("Credit Scoring and Decision", "CreditScoring", "Menu")</li>
+
+                </ul>
+            </div>
+        </header>
+
+        <div class="container body-content">
+            @RenderBody()
+           
+        </div>
+        <footer class="foot">
+            <p>&copy; @DateTime.Now.Year - Loan Processing Application</p>
+        </footer="">
+
+    </body>
+
+
+</html>

@@ -1,0 +1,75 @@
+﻿@using AlexaUITech.Models
+@model ApplicationDetail
+@{
+    ViewBag.Title = "Documents";
+    Layout = "~/Views/Shared/MenuLayout.cshtml";
+}
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 6px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    tr:nth-child(odd) {
+        /*background-color: #f2f2f2;*/
+    }
+</style>
+
+<link href="~/Content/Main.css" rel="stylesheet" />
+
+@using (Html.BeginForm("CreditScoring", "Menu", FormMethod.Post))
+{
+    <br />
+    <br />
+    <div class="div1">
+        <table>
+            <div class="heading">
+                <h4 style="padding-top: 3px;">Documents</h4>
+            </div>
+            <br />
+            <br />
+            <tr>
+              
+                    <h3 style="color: green;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Documents Required for Pre Sanction of Equipment Loan</h3>
+<tr>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Income Proof - Form 1040EZ</h4>
+            </tr>
+            <tr>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Bank Statements - Last 6 Months</h4>
+            </tr>
+            <tr>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. ID proof - SSN</h4>
+            </tr>
+            <tr>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Address Proof - Passport / Latest telephone bill (landline) / Latest electricity bill / Latest bank account statement</h4>
+            </tr>
+            <tr>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Title deed - proof of agricultural land</h4>
+            </tr>
+            <tr>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. Photographs - 2 nos</h4>
+            </tr>
+            <tr>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7. Quotation - Quotation of tractor issued by dealer to customer</h4>
+            </tr>
+            </tr>
+
+
+
+        </table>
+
+  
+
+        <br />
+    </div>
+}
+
+

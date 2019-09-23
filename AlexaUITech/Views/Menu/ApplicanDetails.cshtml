@@ -1,0 +1,158 @@
+﻿@using AlexaUITech.Models
+@model ApplicationDetail
+@{
+    ViewBag.Title = "ApplicantDetails";
+    Layout = "~/Views/Shared/MenuLayout.cshtml";
+}
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 6px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    tr:nth-child(odd) {
+        /*background-color: #f2f2f2;*/
+    }
+</style>
+
+<link href="~/Content/Main.css" rel="stylesheet" />
+
+@using (Html.BeginForm("ApplicanDetails", "Menu", FormMethod.Post))
+{
+    <br />
+    <br />
+    <div class="div1">
+        <table>
+            <div class="heading">
+                <h4 style="padding-top: 3px;">Applicant Details</h4>
+            </div>
+            <br />
+            <br />
+            <tr>
+                <th>
+                    @Html.LabelFor(m => m.RelationshipType, "RelationShip Type")
+                </th>
+                <th>
+                    @Html.LabelFor(m => m.SSN, "SSN No")
+                </th>
+                <th>
+                    @Html.LabelFor(m => m.City, "City")
+                </th>
+                <th>
+                    @Html.LabelFor(m => m.State)
+
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    @Html.TextBoxFor(m => m.RelationshipType, new { @class = "FancyTextBox" })
+
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.SSN, new { @class = "FancyTextBox" })
+
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.City, new { @class = "FancyTextBox" })
+
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.State, new { @class = "FancyTextBox" })
+                </td>
+            </tr>
+
+            <tr>
+
+                <th>
+                    @Html.LabelFor(m => m.Suffix, "Suffix")
+
+                </th>
+                <th>
+                    @Html.LabelFor(m => m.FirstName, "First Name")
+
+                </th>
+                <th>
+                    @Html.LabelFor(m => m.MiddleName, "Middle Name")
+
+                </th>
+                <th>
+                    @Html.LabelFor(m => m.LastName, "Last Name")
+                </th>
+            </tr>
+            <tr>
+
+                <td>
+                    @Html.TextBoxFor(m => m.Suffix, new { @class = "FancyTextBox" })
+                </td>
+                <td>
+
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "FancyTextBox" })
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.MiddleName, new { @class = "FancyTextBox" })
+
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "FancyTextBox" })
+
+                </td>
+            </tr>
+
+
+            <tr>
+
+                <th>
+                    @Html.LabelFor(m => m.DOB)
+
+                </th>
+                <th>
+                    @Html.LabelFor(m => m.Address1, "Address 1")
+                </th>
+                <th>
+                    @Html.LabelFor(m => m.Address2, "Address 2")
+                </th>
+                <th>
+                    @Html.LabelFor(m => m.PinCode, "PinCode")
+                </th>
+            </tr>
+            <tr>
+
+
+                <td>
+                    @Html.TextBoxFor(m => m.DOB, new { @class = "FancyTextBox" })
+
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Address1, new { @class = "FancyTextBox" })
+
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Address2, new { @class = "FancyTextBox" })
+
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.PinCode, new { @class = "FancyTextBox" })
+
+                </td>
+            </tr>
+
+        </table>
+
+        <p style="padding-right:70px" align="right">
+            @*<input type="submit" id="btnEdit" value="Edit" class="FancyButton" />*@
+            <input type="submit" id="btnUpdate" value="Update" class="FancyButton" />
+
+        </p>
+        @Html.Raw(TempData["msg"])
+        <br />
+    </div>
+}
+

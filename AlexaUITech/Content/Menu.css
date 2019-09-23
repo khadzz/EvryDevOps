@@ -1,0 +1,91 @@
+﻿body {
+    /*margin: 0;
+    padding: 0;
+    background-image: url('../Images/field.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #ccc;*/
+}
+
+.nav ul {
+    list-style: none;
+    background-color: #528b56;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    /*border-radius: 150px 150px 150px 150px;*/
+    border-radius: 0px 999px 999px 0px;
+}
+
+.nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 35px;
+    border-bottom: 1px solid #888;
+    border-radius: 0px 999px 999px 0px;
+}
+
+.nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+    height: 35px;
+    border-radius: 0px 999px 999px 0px;
+}
+
+    .nav a:hover {
+        background-color: #005f5f;
+        height: 35px;
+        /*border-radius: 0px 999px 999px 0px;*/
+        border-radius: 0px 10px 0px 0px;
+        border-width: 0px 10px 0px 0px;
+    }
+
+    .nav a.active {
+        background-color: #fff;
+        color: #444;
+        cursor: default;
+        text-align: center;
+       height:35px;
+    }
+
+@media screen and (min-width: 600px) {
+    .nav li {
+        width: 215px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 35px;
+        font-size: 1em;
+        border: white solid;
+        border-width: 0px 10px 0px 0px;
+    }
+
+    /* Option 1 - Display Inline */
+    .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+
+    .tab {
+        display: inline-block;
+        margin-left: 10px;
+        
+    }
